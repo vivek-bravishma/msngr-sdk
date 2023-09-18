@@ -91,7 +91,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <script>
+    <!-- <script>
       AvMessagingSdk.init({
         integrationId: "63738a64ee04730103580ae2",
 
@@ -104,6 +104,18 @@
           // console.log("hi");
         })
         .catch((err) => console.log("err==> ", err));
+    </script> -->
+
+    <script>
+      window.messengerReady = false;
+      AvMessagingSdk.init({
+        integrationId: "63738a64ee04730103580ae2",
+      })
+        .then(function () {
+          console.log("messengr initiated");
+          window.messengerReady = true;
+        })
+        .catch((err) => console.log("messengr err==> ", err));
     </script>
   </body>
 </html>

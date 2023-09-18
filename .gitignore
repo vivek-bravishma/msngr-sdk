@@ -11,6 +11,7 @@
 # production
 /build
 /cdn
+/bkp
 
 # misc
 .DS_Store
