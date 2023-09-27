@@ -81,7 +81,7 @@ const LoginForm = ({ setUser, setUserPresent }) => {
         value={password}
         required
       />
-      <button className="form-btn" disabled={isDisabled}>
+      <button className="form-btn btn btn-info navbank" disabled={isDisabled}>
         Login
       </button>
     </form>
